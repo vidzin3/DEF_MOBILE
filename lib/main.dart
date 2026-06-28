@@ -12,10 +12,37 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'def',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
+        // fontFamily: 'simple',
+        useMaterial3: true,
       ),
       home: Text('DEF MOBILE APP'),
     );
   }
 }
+
+// class _SessionGate extends StatelessWidget {
+//   const _SessionGate();
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return FutureBuilder(
+//       future: , 
+//       builder: (context, snapshot) {
+//         if(snapshot.connectionState != ConnectionState.done){
+//           return const Scaffold(body: Center(child: CircularProgressIndicator()));
+//         }
+
+//         // return snapshot.data != null ? "" : 
+//       }
+//     );
+//   }
+// }
+
+// lifecycle app 
+// when app start
+// app pause
+// app continue
+// app close
+// app kill
